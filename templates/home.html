@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+home page
+{% endblock  %}
+
+
+{% block link %} 
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock  %}
+
+
+{% block body %}
+
+
+    <div class="container text-center">
+        <h1 class="display-4">Welcome to TodoApp</h1>
+        <p class="lead">Stay organized and increase your productivity with our simple and powerful to-do list app.</p>
+        <a href="{% url 'todolist' %}" class="btn btn-custom btn-lg" >Get Started</a>
+    </div>
+
+
+
+{% endblock  %}
